@@ -9,3 +9,5 @@ print(df.info())
 
 print(df.describe())
 
+df['average'] = (df['math'] + df['english'] + df['science']) / 3
+print(df)
