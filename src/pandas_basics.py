@@ -22,4 +22,9 @@ def classify(score):
 
 df["grade"] = df["average"].apply(classify)
 
-print(df)
+#print(df)
+
+top_student = df[df["average"] == df["average"].max()]
+
+'''print("Top student:")
+print(top_student)'''
